@@ -1,0 +1,200 @@
+body {
+    margin: 100px 20px;
+    background-color: #99e6d8;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div {
+    margin-top: 0;
+}
+
+p {
+    padding-top: 2%;
+    padding-left: 5%;
+   
+}
+
+h1 {
+    text-align: center;
+    color: #c19ade;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+h2 {
+    text-align: center;
+    color: #c19ade;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: center;
+    color: #c19ade;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+h4 {
+    text-align: center;
+    color: #8384df;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.Box {
+    color: white;
+    width: 100%;
+    height: 550px;
+    background: url("/Imagen3.jpg") top / cover no-repeat fixed;
+}
+
+.IA {
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 100px 0 white;
+}
+
+.opaco {
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.517);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    width: 70%;
+    height: 40%;
+    margin: 0 auto;
+    /* Centra el formulario en la página */
+    margin-top: 100px;
+    background: linear-gradient(transparent, #99e6d8), transparent;
+    border: 6px solid transparent;
+    border-radius: 20px;
+    font-size: 10px;
+    box-shadow: 0 0 70px 0 rgb(61, 61, 138);
+    padding: 20px;
+    /* Agrega espacio dentro del formulario */
+}
+
+::placeholder {
+    color: rgb(61, 61, 138);
+    font-size: 15px;
+    opacity: 1;
+    font-weight: bold;
+}
+    .opciones{
+        width: 30%;
+        height: 40%;
+        margin-top: 10px;  
+        padding: auto;
+        background: #99e6d8 ;
+    border:6px solid transparent;
+    border-radius:20px;
+    font-size: 20px;
+    color: #555799;
+    font-weight: bold;
+    box-shadow: 0 0 50px 0 rgb(61, 61, 138);
+    }
+
+
+    .opciones:hover {
+        background-color: #8384df;
+        Color: white;
+        border: 6px solid transparent;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 0 10px 0 white;
+    }
+
+
+.enviar {
+    width: 20%;
+    padding: 6px ;
+    margin-top: 10px;
+    background-color: #c19ade;
+    Color: rgb(61, 61, 138) ;
+    border: 6px solid transparent;
+    border-radius:20px;
+    font-size: 18px;
+    box-shadow: 0 0 10px 0 white;
+}
+
+.enviar:hover {
+    background-color: #8384df;
+    Color: white;
+    border: 6px solid transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 0 0 10px 0 white;
+}
+
+.Campo {
+    width: 80%;
+    /* Ajusta el ancho de los campos para centrarlos */
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    /* Ajusta el tamaño de fuente según prefieras */
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 white;
+    margin: 10px 0;
+    /* Agrega espacio entre cada campo */
+    padding: 10px;
+    /* Agrega espacio dentro del campo */
+}
+
+label {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(61, 61, 138);
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.Campo:focus {
+    outline: none;
+    /* Elimina el borde negro por defecto */
+    border: 2px solid rgb(61, 61, 138);
+    /* Cambia el color del borde a uno personalizado */
+    box-shadow: 0 0 10px rgb(61, 61, 138);
+    /* Agrega un efecto de sombra si deseas */
+}
+
+.intro-container,
+.response-container,
+.error-container {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.response-container h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.error-container {
+    background-color: #ffe6e6;
+    border-color: #ff6666;
+}
+
+.intro-container p,
+.response-container p,
+.error-container p {
+    color: #555;
+    line-height: 1.5;
+}
+

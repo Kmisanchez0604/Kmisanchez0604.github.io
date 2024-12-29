@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesor de Crianza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>IA PARENTS</h1>
+
+<h2>Bienvenidos a su Asesor Virtual de Crianza</h2>
+
+<div><img class="IA" src="/Imagen2.jpg" alt="Imagen de presentación de la IA"></div>
+<div class="Box">
+    <div class="opaco">
+<p class="Inicial">Descubre el apoyo que necesitas en cada etapa del crecimiento de tus hijos.</p> 
+<p class="Inicial">Desde los primeros días de vida hasta la adolescencia, nuestra plataforma está diseñada para brindarte orientación confiable, consejos prácticos y apoyo emocional, personalizados según la edad y etapa de tu hijo.</p>
+
+   <h2>¿Cómo te ayudamos?</h2>
+  <p class="ayuda">Con un enfoque en el bienestar infantil y el crecimiento saludable, nuestro asistente virtual está disponible las 24 horas, listo para responder tus preguntas, ofrecer recomendaciones de crianza y acompañarte en los momentos importantes de tu rol como padre.</p>
+  <p class="Ayuda">Con opciones de Consejos Útiles, Guía Psicológica y una Visión Detallada de cada Etapa de tu hijo, puedes estar seguro de que siempre tendrás a un experto a tu lado.</p>
+</div>    
+</div>
+<h3>PORQUE CRIAR ES MÁS FÁCIL CUANDO TIENES EL APOYO ADECUADO.</h3>
+
+
+    <div class="container">
+        <h4>Regístrate</h4>
+
+
+        <form class="formulario" id="userForm">
+            <label for="parentName">Nombre del Padre:</label>
+            <input class="Campo" type="text" id="parentName" placeholder="Camilo Sánchez" required>
+
+            <label for="childName">Nombre del Niño:</label>
+            <input class="Campo" type="text" id="childName" placeholder="Jerónimo" required>
+
+            <label for="childAge">Edad del Niño (en meses):</label>
+            <input class="Campo" type="number" id="childAge" placeholder="6"required>
+
+            <button class="enviar" type="submit">Registrar</button>
+        </form>
+
+        <div  id="options" style="display: none;">
+            <h2>¿Necesitas ayuda con?</h2>
+
+            <button class="opciones" onclick="fetchAdvice('advice')">Consejos</button>
+            <button class="opciones" onclick="fetchAdvice('psychological_help')">Ayuda Psicológica</button>
+            <button class="opciones" onclick="fetchAdvice('stage_guide')">Guía de Eventos en su Etapa</button>
+        </div>
+
+        <div class="Resutlado" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
