@@ -11,7 +11,7 @@ const app = express();
 const port = 3300;
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on https://kmisanchez0604-github-io.onrender.com:${port}`);
 });
 
 // Configuración de CORS
