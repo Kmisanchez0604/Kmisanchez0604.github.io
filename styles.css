@@ -12,7 +12,6 @@ div {
 p {
     padding-top: 2%;
     padding-left: 5%;
-   
 }
 
 h1 {
@@ -51,14 +50,14 @@ h4 {
 }
 
 .IA {
-    margin-left: 25%;
-    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     border-radius: 50%;
     box-shadow: 0 0 100px 0 white;
 }
 
 .opaco {
-
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.517);
@@ -68,19 +67,16 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centra los elementos horizontalmente */
-    width: 70%;
-    height: 40%;
+    width: 90%;
+    height: auto;
     margin: 0 auto;
-    /* Centra el formulario en la página */
-    margin-top: 100px;
+    margin-top: 50px;
     background: linear-gradient(transparent, #99e6d8), transparent;
     border: 6px solid transparent;
     border-radius: 20px;
     font-size: 10px;
     box-shadow: 0 0 70px 0 rgb(61, 61, 138);
     padding: 20px;
-    /* Agrega espacio dentro del formulario */
 }
 
 ::placeholder {
@@ -89,47 +85,46 @@ h4 {
     opacity: 1;
     font-weight: bold;
 }
-    .opciones{
-        width: 30%;
-        height: 40%;
-        margin-top: 10px;  
-        padding: auto;
-        background: #99e6d8 ;
-    border:6px solid transparent;
-    border-radius:20px;
-    font-size: 20px;
+
+.opciones {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background: #99e6d8;
+    border: 6px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
     color: #555799;
     font-weight: bold;
     box-shadow: 0 0 50px 0 rgb(61, 61, 138);
-    }
+}
 
-
-    .opciones:hover {
-        background-color: #8384df;
-        Color: white;
-        border: 6px solid transparent;
-        border-radius: 20px;
-        font-size: 20px;
-        font-weight: bold;
-        box-shadow: 0 0 10px 0 white;
-    }
-
+.opciones:hover {
+    background-color: #8384df;
+    color: white;
+    border: 6px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px 0 white;
+}
 
 .enviar {
-    width: 20%;
-    padding: 6px ;
+    width: 90%;
+    padding: 10px;
     margin-top: 10px;
     background-color: #c19ade;
-    Color: rgb(61, 61, 138) ;
+    color: rgb(61, 61, 138);
     border: 6px solid transparent;
-    border-radius:20px;
+    border-radius: 20px;
     font-size: 18px;
     box-shadow: 0 0 10px 0 white;
 }
 
 .enviar:hover {
     background-color: #8384df;
-    Color: white;
+    color: white;
     border: 6px solid transparent;
     border-radius: 20px;
     font-size: 18px;
@@ -137,19 +132,15 @@ h4 {
 }
 
 .Campo {
-    width: 80%;
-    /* Ajusta el ancho de los campos para centrarlos */
+    width: 100%;
     background-color: transparent;
     color: black;
     font-size: 16px;
-    /* Ajusta el tamaño de fuente según prefieras */
     border: 1px solid transparent;
     border-radius: 20px;
     box-shadow: 0 0 10px 0 white;
     margin: 10px 0;
-    /* Agrega espacio entre cada campo */
     padding: 10px;
-    /* Agrega espacio dentro del campo */
 }
 
 label {
@@ -158,17 +149,14 @@ label {
     text-align: center;
     color: rgb(61, 61, 138);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1;
 }
 
 .Campo:focus {
     outline: none;
-    /* Elimina el borde negro por defecto */
     border: 2px solid rgb(61, 61, 138);
-    /* Cambia el color del borde a uno personalizado */
     box-shadow: 0 0 10px rgb(61, 61, 138);
-    /* Agrega un efecto de sombra si deseas */
 }
 
 .intro-container,
@@ -198,3 +186,46 @@ label {
     line-height: 1.5;
 }
 
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        margin: 20px 10px;
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3, h4 {
+        font-size: 20px;
+    }
+
+    .Box {
+        height: auto;
+    }
+
+    .IA {
+        width: 90%;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .opciones,
+    .enviar {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .Campo {
+        width: 100%;
+        font-size: 14px;
+    }
+}
