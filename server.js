@@ -16,7 +16,7 @@ app.listen(port, () => {
 
 // Configuración de CORS
 app.use(cors({
-    origin: 'http://127.0.0.1:5500',
+    origin: 'https://kmisanchez0604.github.io',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
