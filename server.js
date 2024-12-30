@@ -67,22 +67,23 @@ app.post('/chat', async (req, res) => {
 // Función para determinar la etapa según la edad
 function getStage(age) {
     if (age <= 24) return 'Bebé (0-24 meses)';
-    if (age <= 144) return 'Niño (2-12 años)';
+    if (age <= 70) return 'Primera Infancia (2-5 Años)';
+    if (age <= 132) return 'Niño (6-11 años)';
     return 'Adolescente (12-18 años)';
 }
 
 // Función para crear el prompt según el tipo de ayuda y la etapa
 function createPrompt(type, stage, parentName, childName) {
-    let prompt = `Eres un asesor de crianza que ayuda a ${parentName} con su hijo ${childName}, que está en la etapa de ${stage}. `;
+    let prompt = `Eres un asesor de crianza que ayuda a ${parentName} con su hijo o hija ${childName}, que está en la etapa de ${stage}. `;
     switch(type) {
         case 'advice':
-            prompt += "Proporciona un consejo general sobre cómo manejar situaciones comunes en esta etapa.";
+            prompt += "Proporciona consejos generales sobre cómo manejar situaciones comunes en esta etapa, devuelveme la respuesta en formato HTML.";
             break;
         case 'psychological_help':
-            prompt += "Ofrece una recomendación de apoyo psicológico para esta etapa.";
+            prompt += "Ofrece algunas recomendaciones de apoyo psicológico para esta etapa, devuelveme la respuesta en formato HTML.";
             break;
         case 'stage_guide':
-            prompt += "Describe eventos y comportamientos típicos de esta etapa que ayuden a los padres a entender el desarrollo de su hijo.";
+            prompt += "Describe eventos y comportamientos típicos de esta etapa que ayuden a los padres a entender el desarrollo de su hijo, devuelveme la respuesta en formato HTML.";
             break;
     }
     return prompt;
