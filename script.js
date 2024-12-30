@@ -24,7 +24,7 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
     window.childAge = childAge;
 });
 function fetchAdvice(type) {
-    const url = 'https://kmisanchez0604-github-io.onrender.com:3300/chat';
+    const url = 'https://kmisanchez0604-github-io.onrender.com:3300';
 
     fetch(url, {
         method: 'POST',
