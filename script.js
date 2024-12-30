@@ -9,10 +9,12 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
     let stage;
     if (childAge <= 24) {
         stage = 'Bebé (0-24 meses)';
+    } else if (childAge <= 70) {
+        stage = 'Primera Infancia (2-5 años)';
+    } else if (childAge <= 132) {
+        stage = 'Niño (6-11 años)';
     } else if (childAge <= 144) {
-        stage = 'Niño (2-12 años)';
-    } else {
-        stage = 'Adolescente (12-18 años)';
+        stage = 'Adolecente (12-18 años)';
     }
 
     document.getElementById('options').style.display = 'block';
